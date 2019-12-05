@@ -1,5 +1,9 @@
 package com.bridgelabz.addressbook;
 
+import java.io.IOException;
+
 public interface AddressBook {
-     void addPerson(String mahendra, String kundare, String s, String aurangabad, String maharashtra, String s1);
+     boolean addPerson(String firstName, String lastName, String contactNo, String city, String state, String zipcode) throws IOException;
+
+     boolean isFileAvailable(String destinationFolder, String fileName) throws IOException;
 }
