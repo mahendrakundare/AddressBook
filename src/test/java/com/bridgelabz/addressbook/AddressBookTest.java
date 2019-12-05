@@ -23,6 +23,16 @@ public class AddressBookTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testToCreateNewFile() {
+        AddressBookImpl addressBookImpl = new AddressBookImpl();
+        try {
+            Assert.assertEquals("True",addressBookImpl.createNewFile(DESTINATION_FOLDER,"book2.json"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 

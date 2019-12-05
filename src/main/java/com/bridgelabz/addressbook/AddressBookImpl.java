@@ -19,4 +19,13 @@ public class AddressBookImpl implements AddressBook {
             return "False";
         }
     }
+
+    public String createNewFile(String destinationFolder, String fileName) throws IOException {
+        String fullPath = destinationFolder+fileName;
+        File file = new File(fullPath);
+        if (file.createNewFile())
+            return "True";
+        else
+            return "False";
+    }
 }
