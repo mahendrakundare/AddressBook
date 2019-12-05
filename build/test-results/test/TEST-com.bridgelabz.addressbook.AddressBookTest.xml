@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-05T10:03:41" hostname="admin1-LIVA-Z2V" time="0.303">
+<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-05T12:03:33" hostname="admin1-LIVA-Z2V" time="0.089">
   <properties/>
-  <testcase name="GivenData_IfStoreinJson_ShouldReturnTrue" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.303"/>
-  <system-out><![CDATA[firstName mahendra lastName kundare contactNo 8149288245 city aurangabad state maharashtra zipcode 431001
+  <testcase name="GivenData_IfStoreinJson_ShouldReturnTrue" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.089"/>
+  <system-out><![CDATA[firstName mahendra lastName kundare contactNo 8149288245 city aurangabad state karnataka zipcode 431001
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
