@@ -11,14 +11,14 @@ public class AddressBookTest {
     @Test
     public void checkGivenFile_IfNotPresent_ThenReturnFalse() throws IOException {
         AddressBookImpl addressBookImpl = new AddressBookImpl();
-        Assert.assertEquals("False",addressBookImpl.isFileAvailable(DESTINATION_FOLDER,"book.json"));
+        Assert.assertFalse(addressBookImpl.isFileAvailable(DESTINATION_FOLDER,"book.json"));
     }
 
     @Test
     public void checkGivenFile_IfPresent_ThenReturnTrue() {
         AddressBookImpl addressBookImpl = new AddressBookImpl();
         try {
-            Assert.assertEquals("True",addressBookImpl.isFileAvailable(DESTINATION_FOLDER,"book1.json"));
+            Assert.assertTrue(addressBookImpl.isFileAvailable(DESTINATION_FOLDER,"book1.json"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -32,6 +32,15 @@ public class AddressBookTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void toCheckValuesAssignedToPojoOrNot() {
+        AddressBookImpl addressBookImpl = new AddressBookImpl();
+        Person person = new Person("mahendra","kundare","8149288245",
+                "aurangabad","maharashtra","431001");
+        String result = person.getFirstName();
+        Assert.assertEquals("mahendra",result);
     }
 }
 
