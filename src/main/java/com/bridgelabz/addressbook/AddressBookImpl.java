@@ -11,10 +11,12 @@ public class AddressBookImpl implements AddressBook {
     }
 
     public String isFileAvailable(String destinationFolder, String fileName) throws IOException {
-        File file = new File(destinationFolder);
-        if (file.createNewFile())
-            return "true";
-        else
-            return "false";
+        String fullPath = destinationFolder + fileName;
+        File file = new File(fullPath);
+        if (file.exists()) {
+            return "True";
+        } else {
+            return "False";
+        }
     }
 }

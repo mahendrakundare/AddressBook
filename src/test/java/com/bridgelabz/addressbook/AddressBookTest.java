@@ -11,6 +11,18 @@ public class AddressBookTest {
     @Test
     public void checkGivenFile_IfNotPresent_ThenReturnFalse() throws IOException {
         AddressBookImpl addressBookImpl = new AddressBookImpl();
-        Assert.assertEquals("false",addressBookImpl.isFileAvailable(DESTINATION_FOLDER,"book1.json"));
+        Assert.assertEquals("False",addressBookImpl.isFileAvailable(DESTINATION_FOLDER,"book.json"));
+    }
+
+    @Test
+    public void checkGivenFile_IfPresent_ThenReturnTrue() {
+        AddressBookImpl addressBookImpl = new AddressBookImpl();
+        try {
+            Assert.assertEquals("True",addressBookImpl.isFileAvailable(DESTINATION_FOLDER,"book1.json"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
+
+
