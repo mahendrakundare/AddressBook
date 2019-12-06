@@ -8,4 +8,6 @@ public interface AddressBook {
      boolean isFileAvailable(String destinationFolder, String s) throws IOException;
 
      String readData(String firstName, String fullPath);
+
+     String deleteData(String firstName, String fullPath);
 }

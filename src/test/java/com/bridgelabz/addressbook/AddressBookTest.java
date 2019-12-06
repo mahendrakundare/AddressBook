@@ -45,7 +45,7 @@ public class AddressBookTest {
     @Test
     public void GivenData_IfStoreinJson_ShouldReturnTrue() throws IOException {
         String fullPath=DESTINATION_FOLDER+"book1.json";
-        Assert.assertTrue(addressBookImpl.addPerson("mahendra", "kundare", "8149288245", "aurangabad",
+        Assert.assertTrue(addressBookImpl.addPerson("avengers", "kundare", "8149288245", "aurangabad",
                 "karnataka", "431001",fullPath));
     }
 
@@ -54,6 +54,13 @@ public class AddressBookTest {
     public void CheckDataAvailableOrNot() {
         String fullPath=DESTINATION_FOLDER+"book1.json";
         Assert.assertEquals("FOUND",addressBookImpl.readData("mahendra",fullPath));
+    }
+
+    //t7
+    @Test
+    public void GivenRecord_IfDelete_ShouldReturnTrue() {
+        String fullPath=DESTINATION_FOLDER+"book1.json";
+        Assert.assertEquals("removed",addressBookImpl.deleteData("avengers",fullPath));
     }
 }
 

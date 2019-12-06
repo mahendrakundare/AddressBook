@@ -46,7 +46,6 @@ public class AddressBookImpl implements AddressBook {
 
     @Override
     public String readData(String firstName, String fullPath) {
-//        controller.ReadFromJson(fullPath);
         List<Person> list = controller.ReadFromJson(fullPath);
         for (Person p : list)
             if (p.getFirstName().equalsIgnoreCase(firstName)){
@@ -56,5 +55,21 @@ public class AddressBookImpl implements AddressBook {
         return "NOTFOUND";
     }
 
+    @Override
+    public String deleteData(String firstName, String fullPath) {
+        List<Person> list = controller.ReadFromJson(fullPath);
+        List<Person>locallist = new ArrayList<>();
+
+        for (int i=0;i<list.size();i++) {
+            if (!firstName.equalsIgnoreCase(list.get(i).getFirstName())) {
+                locallist.add(list.get(i));
+            }
+            else {
+                return "removed";
+            }
+            controller.saveToJsonFile(locallist,fullPath);
+        }
+        return "not removed";
+    }
 
 }

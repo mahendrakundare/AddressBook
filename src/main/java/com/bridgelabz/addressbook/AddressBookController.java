@@ -16,7 +16,6 @@ public class AddressBookController {
     ObjectMapper mapper = new ObjectMapper();
 
     public void saveToJsonFile(List<Person> personList, String fullPath) {
-
         File file = new File(fullPath);
         try {
             mapper.writeValue(file,personList);
@@ -27,7 +26,6 @@ public class AddressBookController {
 
     public List<Person> ReadFromJson(String fullPath) {
         File file = new File(fullPath);
-//        List<Person> personList = new ArrayList<>();
         try {
             List<Person> list = new ArrayList(Arrays.asList(mapper.readValue(file, Person[].class)));
             return list;
