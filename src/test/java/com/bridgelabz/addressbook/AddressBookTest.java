@@ -86,7 +86,6 @@ public class AddressBookTest {
         Assert.assertEquals("Edited",addressBookImpl.editDetails( "kundare", "1234567890",
                 "pune", "karnataka", "147852",fullPath));
     }
-
 }
 
 
