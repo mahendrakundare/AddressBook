@@ -11,14 +11,22 @@ public class AddressBookTest {
 
     //t1
     @Test
-    public void checkGivenFile_IfNotPresent_ThenReturnFalse() throws IOException {
-        Assert.assertFalse(addressBookImpl.isFileAvailable(DESTINATION_FOLDER, "book.json"));
+    public void checkGivenFile_IfNotPresent_ThenReturnFalse()  {
+        try {
+            Assert.assertFalse(addressBookImpl.isFileAvailable(DESTINATION_FOLDER, "book.json"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     //t2
     @Test
-    public void checkGivenFile_IfPresent_ThenReturnTrue() throws IOException {
-        Assert.assertTrue(addressBookImpl.isFileAvailable(DESTINATION_FOLDER, "book1.json"));
+    public void checkGivenFile_IfPresent_ThenReturnTrue()  {
+        try {
+            Assert.assertTrue(addressBookImpl.isFileAvailable(DESTINATION_FOLDER, "book1.json"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     //t3
@@ -30,7 +38,7 @@ public class AddressBookTest {
 
     //t4
     @Test
-    public void toCheckValuesAssignedToPojoOrNot() throws IOException {
+    public void toCheckValuesAssignedToPojoOrNot()  {
         Person person = new Person("mahendra", "kundare", "8149288245",
                 "aurangabad", "maharashtra", "431001");
         String result = person.getFirstName();
@@ -39,10 +47,14 @@ public class AddressBookTest {
 
     //t5
     @Test
-    public void GivenData_IfStoreinJson_ShouldReturnTrue() throws IOException {
+    public void GivenData_IfStoreinJson_ShouldReturnTrue()  {
         String fullPath=DESTINATION_FOLDER+"book1.json";
-        Assert.assertTrue(addressBookImpl.addPerson("avengers", "kundare", "8149288245", "aurangabad",
-                "karnataka", "431001",fullPath));
+        try {
+            Assert.assertTrue(addressBookImpl.addPerson("avengers", "kundare", "8149288245", "aurangabad",
+                    "karnataka", "431001",fullPath));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     //t6
