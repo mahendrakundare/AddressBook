@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7b5dbe-9fb1-45f7-83c7-0817b19aa3d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBookController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -12,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JSONFiles/book1.json" beforeDir="false" afterPath="$PROJECT_DIR$/JSONFiles/book1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBook.class" afterDir="false" />
@@ -21,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelabz.addressbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelabz.addressbook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelabz.addressbook.AddressBookTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelabz.addressbook.AddressBookTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBookImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBookImpl.java" afterDir="false" />
@@ -76,12 +78,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue">
-    <configuration name="AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddressBookTest.CheckDataAvailableOrNot" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.CheckDataAvailableOrNot&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -96,12 +98,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AddressBookTest.checkGivenFile_IfNotPresent_ThenReturnError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.checkGivenFile_IfNotPresent_ThenReturnError&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -199,10 +201,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue" />
+        <item itemvalue="Gradle.AddressBookTest.CheckDataAvailableOrNot" />
         <item itemvalue="Gradle.AddressBookTest.toCheckValuesAssignedToPojoOrNot" />
         <item itemvalue="Gradle.AddressBookTest.testToCreateNewFile" />
         <item itemvalue="Gradle.AddressBookTest.checkGivenFile_IfNotPresent_ThenReturnFalse" />
-        <item itemvalue="Gradle.AddressBookTest.checkGivenFile_IfNotPresent_ThenReturnError" />
       </list>
     </recent_temporary>
   </component>
@@ -236,46 +238,46 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="268" y="186" width="800" height="729" key="#Intentions/67.27.1213.997@67.27.1213.997" timestamp="1575520960881" />
-    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1575527275850">
+    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1575551708568">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/67.27.1213.997@67.27.1213.997" timestamp="1575527275850" />
+    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/67.27.1213.997@67.27.1213.997" timestamp="1575551708568" />
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575520691794">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.997@67.27.1213.997" timestamp="1575520691794" />
-    <state width="1167" height="260" key="GridCell.Tab.0.bottom" timestamp="1575547411359">
+    <state width="1167" height="321" key="GridCell.Tab.0.bottom" timestamp="1575554112167">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575547411359" />
-    <state width="1167" height="260" key="GridCell.Tab.0.center" timestamp="1575547411358">
+    <state width="1167" height="321" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575554112167" />
+    <state width="1167" height="321" key="GridCell.Tab.0.center" timestamp="1575554112166">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1575547411358" />
-    <state width="1167" height="260" key="GridCell.Tab.0.left" timestamp="1575547411358">
+    <state width="1167" height="321" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1575554112166" />
+    <state width="1167" height="321" key="GridCell.Tab.0.left" timestamp="1575554112166">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1575547411358" />
-    <state width="1167" height="260" key="GridCell.Tab.0.right" timestamp="1575547411359">
+    <state width="1167" height="321" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1575554112166" />
+    <state width="1167" height="321" key="GridCell.Tab.0.right" timestamp="1575554112167">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1575547411359" />
-    <state width="1167" height="321" key="GridCell.Tab.1.bottom" timestamp="1575523131339">
+    <state width="1167" height="321" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1575554112167" />
+    <state width="1167" height="321" key="GridCell.Tab.1.bottom" timestamp="1575554112170">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="321" key="GridCell.Tab.1.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575523131339" />
-    <state width="1167" height="321" key="GridCell.Tab.1.center" timestamp="1575523131337">
+    <state width="1167" height="321" key="GridCell.Tab.1.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575554112170" />
+    <state width="1167" height="321" key="GridCell.Tab.1.center" timestamp="1575554112169">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="321" key="GridCell.Tab.1.center/67.27.1213.997@67.27.1213.997" timestamp="1575523131337" />
-    <state width="1167" height="321" key="GridCell.Tab.1.left" timestamp="1575523131332">
+    <state width="1167" height="321" key="GridCell.Tab.1.center/67.27.1213.997@67.27.1213.997" timestamp="1575554112169" />
+    <state width="1167" height="321" key="GridCell.Tab.1.left" timestamp="1575554112169">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="321" key="GridCell.Tab.1.left/67.27.1213.997@67.27.1213.997" timestamp="1575523131332" />
-    <state width="1167" height="321" key="GridCell.Tab.1.right" timestamp="1575523131338">
+    <state width="1167" height="321" key="GridCell.Tab.1.left/67.27.1213.997@67.27.1213.997" timestamp="1575554112169" />
+    <state width="1167" height="321" key="GridCell.Tab.1.right" timestamp="1575554112169">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="321" key="GridCell.Tab.1.right/67.27.1213.997@67.27.1213.997" timestamp="1575523131338" />
+    <state width="1167" height="321" key="GridCell.Tab.1.right/67.27.1213.997@67.27.1213.997" timestamp="1575554112169" />
     <state x="256" y="270" width="824" height="508" key="IDE.errors.dialog" timestamp="1575530045827">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
@@ -284,10 +286,10 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="445" y="304" width="446" height="440" key="chooseDestDirectoryDialog/67.27.1213.997@67.27.1213.997" timestamp="1575520709263" />
-    <state x="418" y="153" width="500" height="743" key="refactoring.ChangeSignatureDialog" timestamp="1575545403550">
+    <state x="418" y="153" width="500" height="743" key="refactoring.ChangeSignatureDialog" timestamp="1575552003763">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="418" y="153" width="500" height="743" key="refactoring.ChangeSignatureDialog/67.27.1213.997@67.27.1213.997" timestamp="1575545403550" />
+    <state x="418" y="153" width="500" height="743" key="refactoring.ChangeSignatureDialog/67.27.1213.997@67.27.1213.997" timestamp="1575552003763" />
     <state x="336" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1575539072369">
       <screen x="67" y="27" width="1213" height="997" />
     </state>

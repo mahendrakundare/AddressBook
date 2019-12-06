@@ -17,12 +17,8 @@ public class AddressBookTest {
 
     //t2
     @Test
-    public void checkGivenFile_IfPresent_ThenReturnTrue() {
-        try {
-            Assert.assertTrue(addressBookImpl.isFileAvailable(DESTINATION_FOLDER, "book1.json"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void checkGivenFile_IfPresent_ThenReturnTrue() throws IOException {
+        Assert.assertTrue(addressBookImpl.isFileAvailable(DESTINATION_FOLDER, "book1.json"));
     }
 
     //t3
@@ -53,6 +49,12 @@ public class AddressBookTest {
                 "karnataka", "431001",fullPath));
     }
 
+    //t6
+    @Test
+    public void CheckDataAvailableOrNot() {
+        String fullPath=DESTINATION_FOLDER+"book1.json";
+        Assert.assertEquals("FOUND",addressBookImpl.readData("mahendra",fullPath));
+    }
 }
 
 

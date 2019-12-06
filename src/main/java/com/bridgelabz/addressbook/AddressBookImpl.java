@@ -13,23 +13,25 @@ public class AddressBookImpl implements AddressBook {
     Person person = new Person();
     List<Person> personList = new ArrayList<>();
     ObjectMapper mapper = new ObjectMapper();
+    AddressBookController controller = new AddressBookController();
 
     @Override
     public boolean addPerson(String firstName, String lastName, String contactNo, String city, String state, String zipcode, String fullPath) {
         Person person = new Person(firstName, lastName, contactNo, city, state, zipcode);
-        personList.add(person);
+        List<Person> list = controller.ReadFromJson(fullPath);
+        list.add(person);
         System.out.println(person.toString());
-        saveToJsonFile(personList,fullPath);
-            return true;
+        controller.saveToJsonFile(list,fullPath);
+        return true;
     }
 
-    private void saveToJsonFile(List<Person> personList, String fullPath) {
+    public String createNewFile(String destinationFolder, String fileName) throws IOException {
+        String fullPath = destinationFolder + fileName;
         File file = new File(fullPath);
-        try {
-            mapper.writeValue(file,personList);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        if (file.createNewFile())
+            return "True";
+        else
+            return "False";
     }
 
     public boolean isFileAvailable(String destinationFolder, String fileName) throws IOException {
@@ -42,13 +44,17 @@ public class AddressBookImpl implements AddressBook {
         }
     }
 
-    public String createNewFile(String destinationFolder, String fileName) throws IOException {
-        String fullPath = destinationFolder + fileName;
-        File file = new File(fullPath);
-        if (file.createNewFile())
-            return "True";
-        else
-            return "False";
+    @Override
+    public String readData(String firstName, String fullPath) {
+//        controller.ReadFromJson(fullPath);
+        List<Person> list = controller.ReadFromJson(fullPath);
+        for (Person p : list)
+            if (p.getFirstName().equalsIgnoreCase(firstName)){
+                System.out.println(p.getFirstName());
+                return "FOUND";
+            }
+        return "NOTFOUND";
     }
+
 
 }
