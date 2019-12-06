@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T09:56:52" hostname="admin1-LIVA-Z2V" time="0.234">
+<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T11:50:03" hostname="admin1-LIVA-Z2V" time="0.066">
   <properties/>
-  <testcase name="GivenRecord_IfDelete_ShouldReturnTrue" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.234"/>
+  <testcase name="toTestWhenSortByName_ShouldReturnAlphabeticallyTopZipCode" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.066"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

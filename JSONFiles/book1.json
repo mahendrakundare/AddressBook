@@ -13,7 +13,7 @@
     "contactNo": "8149288245",
     "city": "aurangabad",
     "state": "karnataka",
-    "zipCode": "431001"
+    "zipCode": "400001"
   },
   {
     "firstName": "avengers",
@@ -21,6 +21,14 @@
     "contactNo": "1234567890",
     "city": "pune",
     "state": "karnataka",
-    "zipCode": "147852"
+    "zipCode": "123456"
+  },
+  {
+    "firstName": "abc",
+    "lastName": "kundare",
+    "contactNo": "1234567890",
+    "city": "mumbai",
+    "state": "maharashtra",
+    "zipCode": "100000"
   }
 ]

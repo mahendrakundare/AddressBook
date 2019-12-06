@@ -25,11 +25,7 @@ public class AddressBookTest {
     @Test
     public void testToCreateNewFile() {
         AddressBookImpl addressBookImpl = new AddressBookImpl();
-        try {
-            Assert.assertEquals("True", addressBookImpl.createNewFile(DESTINATION_FOLDER, "book2.json"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Assert.assertEquals("True", addressBookImpl.createNewFile(DESTINATION_FOLDER, "book2.json"));
     }
 
     //t4
@@ -85,6 +81,14 @@ public class AddressBookTest {
         String fullPath=DESTINATION_FOLDER+"book1.json";
         Assert.assertEquals("Edited",addressBookImpl.editDetails( "kundare", "1234567890",
                 "pune", "karnataka", "147852",fullPath));
+    }
+
+    //t11
+    @Test
+    public void toTestWhenSortByName_ShouldReturnAlphabeticallyTopElement() {
+        String fullPath=DESTINATION_FOLDER+"book1.json";
+        String topElement=addressBookImpl.sortByName(fullPath);
+        Assert.assertEquals("abc",topElement);
     }
 }
 

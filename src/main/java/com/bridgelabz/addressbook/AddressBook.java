@@ -14,4 +14,6 @@ public interface AddressBook {
      String deleteFile(String fullPath);
 
      String editDetails(String lastName, String contactNo, String city, String state, String zipcode, String fullPath);
+
+     String sortByName(String fullPath);
 }

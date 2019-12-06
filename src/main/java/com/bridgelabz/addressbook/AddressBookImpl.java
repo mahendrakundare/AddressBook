@@ -25,16 +25,19 @@ public class AddressBookImpl implements AddressBook {
         return true;
     }
 
-    public String createNewFile(String destinationFolder, String fileName) throws IOException {
+    public String createNewFile(String destinationFolder, String fileName)  {
         String fullPath = destinationFolder + fileName;
         File file = new File(fullPath);
-        if (file.createNewFile())
-            return "True";
-        else
-            return "False";
+        try {
+            if (file.createNewFile())
+                return "True";
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "False";
     }
 
-    public boolean isFileAvailable(String destinationFolder, String fileName) throws IOException {
+    public boolean isFileAvailable(String destinationFolder, String fileName) {
         String fullPath = destinationFolder + fileName;
         File file = new File(fullPath);
         if (file.exists()) {
@@ -98,5 +101,21 @@ public class AddressBookImpl implements AddressBook {
         return "notEdited";
     }
 
+    @Override
+    public String sortByName(String fullPath) {
+        String topElement = "null";
+        List<Person> personList = controller.ReadFromJson(fullPath);
+        for (int i = 0; i < personList.size(); i++) {
+            for (int j = i + 1; j < personList.size(); j++) {
+                if (personList.get(i).getFirstName().compareTo(personList.get(j).getFirstName()) > 0) {
+                    Person temp1 = personList.remove(i);
+                    Person temp2 = personList.remove(j - 1);
+                    personList.add(i, temp2);
+                    personList.add(j, temp1);
+                }
+            }
+        }
+        return topElement = personList.get(0).getFirstName();
+    }
 
 }

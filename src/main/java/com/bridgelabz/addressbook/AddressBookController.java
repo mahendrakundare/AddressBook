@@ -39,16 +39,19 @@ public class AddressBookController {
         return null;
     }
 
-    public String createNewFile(String destinationFolder, String fileName) throws IOException {
+    public String createNewFile(String destinationFolder, String fileName){
         String fullPath = destinationFolder + fileName;
         File file = new File(fullPath);
-        if (file.createNewFile())
-            return "True";
-        else
-            return "False";
+        try {
+            if (file.createNewFile())
+                return "True";
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "False";
     }
 
-    public boolean isFileAvailable(String destinationFolder, String fileName) throws IOException {
+    public boolean isFileAvailable(String destinationFolder, String fileName) {
         String fullPath = destinationFolder + fileName;
         File file = new File(fullPath);
         if (file.exists()) {
@@ -57,6 +60,5 @@ public class AddressBookController {
             return false;
         }
     }
-
 
 }
