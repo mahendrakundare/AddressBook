@@ -70,6 +70,12 @@ public class AddressBookTest {
         Assert.assertEquals("Deleted",addressBookImpl.deleteFile(fullPath));
     }
 
+    //t9
+    @Test
+    public void GivenFileForDelete_IfNotPresent_ShouldReturn_False() {
+        String fullPath=DESTINATION_FOLDER+"book2.json";
+        Assert.assertEquals("notdeleted",addressBookImpl.deleteFile(fullPath));
+    }
 }
 
 

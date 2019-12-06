@@ -3,7 +3,9 @@ package com.bridgelabz.addressbook;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +23,7 @@ public class AddressBookImpl implements AddressBook {
         List<Person> list = controller.ReadFromJson(fullPath);
         list.add(person);
         System.out.println(person.toString());
-        controller.saveToJsonFile(list,fullPath);
+        controller.saveToJsonFile(list, fullPath);
         return true;
     }
 
@@ -48,7 +50,7 @@ public class AddressBookImpl implements AddressBook {
     public String readData(String firstName, String fullPath) {
         List<Person> list = controller.ReadFromJson(fullPath);
         for (Person p : list)
-            if (p.getFirstName().equalsIgnoreCase(firstName)){
+            if (p.getFirstName().equalsIgnoreCase(firstName)) {
                 System.out.println(p.getFirstName());
                 return "FOUND";
             }
@@ -58,16 +60,15 @@ public class AddressBookImpl implements AddressBook {
     @Override
     public String deleteData(String firstName, String fullPath) {
         List<Person> list = controller.ReadFromJson(fullPath);
-        List<Person>locallist = new ArrayList<>();
+        List<Person> locallist = new ArrayList<>();
 
-        for (int i=0;i<list.size();i++) {
+        for (int i = 0; i < list.size(); i++) {
             if (!firstName.equalsIgnoreCase(list.get(i).getFirstName())) {
                 locallist.add(list.get(i));
-            }
-            else {
+            } else {
                 return "removed";
             }
-            controller.saveToJsonFile(locallist,fullPath);
+            controller.saveToJsonFile(locallist, fullPath);
         }
         return "not removed";
     }
@@ -78,7 +79,7 @@ public class AddressBookImpl implements AddressBook {
         if (file.delete())
             return "Deleted";
         else
-            return "notDeleted";
+            return "notdeleted";
     }
 
 }
