@@ -64,12 +64,9 @@ public class AddressBookTest {
     @Test
     public void GivenData_IfStoreinJson_ShouldReturnTrue()  {
         String fullPath=DESTINATION_FOLDER+"book1.json";
-        try {
-            Assert.assertTrue(addressBookImpl.addPerson("avengers", "kundare", "8149288245", "aurangabad",
-                    "karnataka", "431001",fullPath));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Assert.assertTrue(addressBookImpl.addPerson("avengers", "kundare", "8149288245", "aurangabad",
+                "karnataka", "431001",fullPath));
+
     }
 
     //t6

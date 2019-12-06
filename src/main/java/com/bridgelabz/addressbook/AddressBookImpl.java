@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddressBookImpl implements AddressBook {
-    private static final String DESTINATION_FOLDER = "/home/admin1/IdeaProjects/AddressBook/JSONFiles/book1.json";
 
-    Person person = new Person();
-    //    List<Person> personList = new ArrayList<>();
     ObjectMapper mapper = new ObjectMapper();
     AddressBookController controller = new AddressBookController();
 
