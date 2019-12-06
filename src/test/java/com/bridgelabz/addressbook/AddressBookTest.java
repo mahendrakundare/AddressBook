@@ -60,6 +60,7 @@ public class AddressBookTest {
     @Test
     public void GivenRecord_IfDelete_ShouldReturnTrue() {
         String fullPath=DESTINATION_FOLDER+"book1.json";
+//        addressBookImpl.deleteData("avengers",fullPath);
         Assert.assertEquals("removed",addressBookImpl.deleteData("avengers",fullPath));
     }
 

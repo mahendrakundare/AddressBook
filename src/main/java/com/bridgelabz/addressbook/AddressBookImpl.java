@@ -65,10 +65,12 @@ public class AddressBookImpl implements AddressBook {
         for (int i = 0; i < list.size(); i++) {
             if (!firstName.equalsIgnoreCase(list.get(i).getFirstName())) {
                 locallist.add(list.get(i));
+                controller.saveToJsonFile(locallist, fullPath);
             } else {
+                list.remove(list.get(i));
+                controller.saveToJsonFile(list, fullPath);
                 return "removed";
             }
-            controller.saveToJsonFile(locallist, fullPath);
         }
         return "not removed";
     }
