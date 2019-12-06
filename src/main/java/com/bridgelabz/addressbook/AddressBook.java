@@ -16,4 +16,6 @@ public interface AddressBook {
      String editDetails(String lastName, String contactNo, String city, String state, String zipcode, String fullPath);
 
      String sortByName(String fullPath);
+
+     String sortByZip(String fullPath);
 }

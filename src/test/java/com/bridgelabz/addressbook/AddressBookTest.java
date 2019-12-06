@@ -90,6 +90,14 @@ public class AddressBookTest {
         String topElement=addressBookImpl.sortByName(fullPath);
         Assert.assertEquals("abc",topElement);
     }
+
+    //t12
+    @Test
+    public void toTestWhenSortByName_ShouldReturnAlphabeticallyTopZipCode() {
+        String fullPath=DESTINATION_FOLDER+"book1.json";
+        String topElement=addressBookImpl.sortByZip(fullPath);
+        Assert.assertEquals("100000",topElement);
+    }
 }
 
 

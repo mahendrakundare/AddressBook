@@ -118,4 +118,22 @@ public class AddressBookImpl implements AddressBook {
         return topElement = personList.get(0).getFirstName();
     }
 
+    @Override
+    public String sortByZip(String fullPath) {
+        String topElement = "null";
+        List<Person> personList = controller.ReadFromJson(fullPath);
+        for (int i = 0; i < personList.size(); i++) {
+            for (int j = i + 1; j < personList.size(); j++) {
+                if (personList.get(i).getZipCode().compareTo(personList.get(j).getZipCode()) > 0) {
+                    Person temp1 = personList.remove(i);
+                    Person temp2 = personList.remove(j - 1);
+                    personList.add(i, temp2);
+                    personList.add(j, temp1);
+                }
+            }
+        }
+        return topElement = personList.get(0).getZipCode();
+    }
+
+
 }
