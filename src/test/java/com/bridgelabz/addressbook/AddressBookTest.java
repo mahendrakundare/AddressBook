@@ -77,6 +77,15 @@ public class AddressBookTest {
         String fullPath=DESTINATION_FOLDER+"book2.json";
         Assert.assertEquals("notdeleted",addressBookImpl.deleteFile(fullPath));
     }
+
+    //t10
+
+    @Test
+    public void toTestGivenRecordShouldEdit_ShouldReturnTrue() {
+        String fullPath=DESTINATION_FOLDER+"book1.json";
+        Assert.assertEquals("Edited",addressBookImpl.editDetails( "kundare", "1234567890",
+                "pune", "karnataka", "147852",fullPath));
+    }
 }
 
 

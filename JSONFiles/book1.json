@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "firstName": "mahendra",
+    "lastName": "kundare",
+    "contactNo": "8149288245",
+    "city": "aurangabad",
+    "state": "maharashtra",
+    "zipCode": "431001"
+  },
+  {
+    "firstName": "shaktimaan",
+    "lastName": "kundare",
+    "contactNo": "8149288245",
+    "city": "aurangabad",
+    "state": "karnataka",
+    "zipCode": "431001"
+  },
+  {
+    "firstName": "avengers",
+    "lastName": "kundare",
+    "contactNo": "1234567890",
+    "city": "pune",
+    "state": "karnataka",
+    "zipCode": "147852"
+  }
+]

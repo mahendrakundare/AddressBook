@@ -3,9 +3,7 @@ package com.bridgelabz.addressbook;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +11,7 @@ public class AddressBookImpl implements AddressBook {
     private static final String DESTINATION_FOLDER = "/home/admin1/IdeaProjects/AddressBook/JSONFiles/book1.json";
 
     Person person = new Person();
-    List<Person> personList = new ArrayList<>();
+//    List<Person> personList = new ArrayList<>();
     ObjectMapper mapper = new ObjectMapper();
     AddressBookController controller = new AddressBookController();
 
@@ -83,5 +81,23 @@ public class AddressBookImpl implements AddressBook {
         else
             return "notdeleted";
     }
+
+    @Override
+    public String editDetails(String lastName, String contactNo, String city, String state, String zipcode, String fullPath) {
+        List<Person> personList = controller.ReadFromJson(fullPath);
+        for (int i = 0; i < personList.size(); i++) {
+            if (contactNo.equalsIgnoreCase(personList.get(i).getContactNo())) {
+                personList.get(i).setLastName(lastName);
+                personList.get(i).setCity(city);
+                personList.get(i).setState(state);
+                personList.get(i).setZipCode(zipcode);
+                controller.saveToJsonFile(personList, fullPath);
+                return "Edited";
+            }
+        }
+        return "notEdited";
+    }
+
+
 
 }

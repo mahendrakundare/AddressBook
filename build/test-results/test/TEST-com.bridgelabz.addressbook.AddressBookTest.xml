@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T09:03:38" hostname="admin1-LIVA-Z2V" time="0.078">
+<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T09:44:08" hostname="admin1-LIVA-Z2V" time="0.083">
   <properties/>
-  <testcase name="GivenRecord_IfDelete_ShouldReturnTrue" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.078"/>
+  <testcase name="toTestGivenRecordShouldEdit_ShouldReturnTrue" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.083"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
