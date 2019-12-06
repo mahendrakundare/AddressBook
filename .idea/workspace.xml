@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7b5dbe-9fb1-45f7-83c7-0817b19aa3d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBookException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBookImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBookImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/bridgelabz/addressbook/AddressBookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/bridgelabz/addressbook/AddressBookTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelabz.addressbook.AddressBookTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelabz.addressbook.AddressBookTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelabz.addressbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.bridgelabz.addressbook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelabz.addressbook.AddressBookTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.bridgelabz.addressbook.AddressBookTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBookImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBookImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/addressbook/AddressBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/addressbook/AddressBookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,27 +75,7 @@
       <recent name="com.bridgelabz.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddressBookTest.toTestWhenSortByName_ShouldReturnAlphabeticallyTopZipCode">
-    <configuration name="AddressBookTest.GivenRecord_IfDelete_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.GivenRecord_IfDelete_ShouldReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.AddressBookTest.testFileGivenNameIfBlankShouldReturnFalse">
     <configuration name="AddressBookTest.checkGivenFile_IfPresent_ThenReturnTrue" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -97,12 +96,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AddressBookTest.toTestSortingFunction_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddressBookTest.testFileGivenNameIfBlankShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.toTestSortingFunction_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.testFileGivenNameIfBlankShouldReturnFalse&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AddressBookTest.testToCreateNewFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.addressbook.AddressBookTest.testToCreateNewFile&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -179,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddressBookTest.testFileGivenNameIfBlankShouldReturnFalse" />
+        <item itemvalue="Gradle.AddressBookTest.testToCreateNewFile" />
         <item itemvalue="Gradle.AddressBookTest.toTestWhenSortByName_ShouldReturnAlphabeticallyTopZipCode" />
         <item itemvalue="Gradle.AddressBookTest.toTestWhenSortByName_IfPassedWrongElement_ShouldReturnFalse" />
         <item itemvalue="Gradle.AddressBookTest.toTestWhenSortByName_ShouldReturnAlphabeticallyTopElement" />
-        <item itemvalue="Gradle.AddressBookTest.toTestSortingFunction_ShouldReturnTrue" />
-        <item itemvalue="Gradle.AddressBookTest.GivenRecord_IfDelete_ShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -221,30 +240,34 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="268" y="186" width="847" height="677" key="#Project_Structure/67.27.1213.997@67.27.1213.997" timestamp="1575630218218" />
-    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1575632850917">
+    <state x="390" y="329" width="556" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575636029465">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/67.27.1213.997@67.27.1213.997" timestamp="1575632850917" />
+    <state x="390" y="329" width="556" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1213.997@67.27.1213.997" timestamp="1575636029465" />
+    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1575635070817">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="481" y="236" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/67.27.1213.997@67.27.1213.997" timestamp="1575635070817" />
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575520691794">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.997@67.27.1213.997" timestamp="1575520691794" />
-    <state width="1167" height="260" key="GridCell.Tab.0.bottom" timestamp="1575633320646">
+    <state width="1167" height="260" key="GridCell.Tab.0.bottom" timestamp="1575636250913">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575633320646" />
-    <state width="1167" height="260" key="GridCell.Tab.0.center" timestamp="1575633320644">
+    <state width="1167" height="260" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575636250913" />
+    <state width="1167" height="260" key="GridCell.Tab.0.center" timestamp="1575636250912">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1575633320644" />
-    <state width="1167" height="260" key="GridCell.Tab.0.left" timestamp="1575633320643">
+    <state width="1167" height="260" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1575636250912" />
+    <state width="1167" height="260" key="GridCell.Tab.0.left" timestamp="1575636250912">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1575633320643" />
-    <state width="1167" height="260" key="GridCell.Tab.0.right" timestamp="1575633320645">
+    <state width="1167" height="260" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1575636250912" />
+    <state width="1167" height="260" key="GridCell.Tab.0.right" timestamp="1575636250913">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1575633320645" />
+    <state width="1167" height="260" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1575636250913" />
     <state width="1167" height="321" key="GridCell.Tab.1.bottom" timestamp="1575610799936">
       <screen x="67" y="27" width="1213" height="997" />
     </state>

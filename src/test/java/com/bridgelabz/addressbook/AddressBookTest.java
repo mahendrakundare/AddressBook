@@ -33,7 +33,22 @@ public class AddressBookTest {
     @Test
     public void testToCreateNewFile() {
         AddressBookImpl addressBookImpl = new AddressBookImpl();
-        Assert.assertEquals("True", addressBookImpl.createNewFile(DESTINATION_FOLDER, "book2.json"));
+        try {
+            Assert.assertEquals("True", addressBookImpl.createNewFile(DESTINATION_FOLDER, "book2.json"));
+        } catch (AddressBookException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //t13
+    @Test
+    public void testFileGivenNameIfBlankShouldReturnFalse() {
+        AddressBookImpl addressBookImpl = new AddressBookImpl();
+        try {
+            Assert.assertEquals("False",addressBookImpl.createNewFile(DESTINATION_FOLDER,""));
+        } catch (AddressBookException e) {
+            e.printStackTrace();
+        }
     }
 
     //t4

@@ -1,6 +1,7 @@
 package com.bridgelabz.addressbook;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import sun.jvm.hotspot.debugger.AddressException;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +26,7 @@ public class AddressBookImpl implements AddressBook {
         return true;
     }
 
-    public String createNewFile(String destinationFolder, String fileName)  {
+    public String createNewFile(String destinationFolder, String fileName) throws AddressBookException {
         String fullPath = destinationFolder + fileName;
         File file = new File(fullPath);
         try {
@@ -33,6 +34,7 @@ public class AddressBookImpl implements AddressBook {
                 return "True";
         } catch (IOException e) {
             e.printStackTrace();
+            throw new AddressBookException("file not found", AddressBookException.ExceptionType.FILE_NOT_FOUND);
         }
         return "False";
     }
