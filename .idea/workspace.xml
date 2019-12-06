@@ -13,8 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSONFiles/book1.json" beforeDir="false" afterPath="$PROJECT_DIR$/JSONFiles/book1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBookImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/addressbook/AddressBookImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/bridgelabz/addressbook/AddressBookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/bridgelabz/addressbook/AddressBookTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelabz.addressbook.AddressBookTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.bridgelabz.addressbook.AddressBookTest.html" afterDir="false" />
@@ -74,7 +72,7 @@
       <recent name="com.bridgelabz.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddressBookTest.toTestGivenRecordShouldEdit_ShouldReturnTrue">
+  <component name="RunManager" selected="Gradle.AddressBookTest.GivenRecord_IfDelete_ShouldReturnTrue">
     <configuration name="AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,8 +195,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddressBookTest.toTestGivenRecordShouldEdit_ShouldReturnTrue" />
         <item itemvalue="Gradle.AddressBookTest.GivenRecord_IfDelete_ShouldReturnTrue" />
+        <item itemvalue="Gradle.AddressBookTest.toTestGivenRecordShouldEdit_ShouldReturnTrue" />
         <item itemvalue="Gradle.AddressBookTest.GivenFileForDelete_IfNotPresent_ShouldReturn_False" />
         <item itemvalue="Gradle.AddressBookTest.GivenData_IfStoreinJson_ShouldReturnTrue" />
         <item itemvalue="Gradle.AddressBookTest.GivenFile_IfDelete_ShouldReturnTrue" />
@@ -243,22 +241,22 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.997@67.27.1213.997" timestamp="1575520691794" />
-    <state width="1167" height="260" key="GridCell.Tab.0.bottom" timestamp="1575625446289">
+    <state width="1167" height="260" key="GridCell.Tab.0.bottom" timestamp="1575626210218">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575625446289" />
-    <state width="1167" height="260" key="GridCell.Tab.0.center" timestamp="1575625446288">
+    <state width="1167" height="260" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1575626210218" />
+    <state width="1167" height="260" key="GridCell.Tab.0.center" timestamp="1575626210217">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1575625446288" />
-    <state width="1167" height="260" key="GridCell.Tab.0.left" timestamp="1575625446288">
+    <state width="1167" height="260" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1575626210217" />
+    <state width="1167" height="260" key="GridCell.Tab.0.left" timestamp="1575626210216">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1575625446288" />
-    <state width="1167" height="260" key="GridCell.Tab.0.right" timestamp="1575625446289">
+    <state width="1167" height="260" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1575626210216" />
+    <state width="1167" height="260" key="GridCell.Tab.0.right" timestamp="1575626210217">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1167" height="260" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1575625446289" />
+    <state width="1167" height="260" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1575626210217" />
     <state width="1167" height="321" key="GridCell.Tab.1.bottom" timestamp="1575610799936">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
@@ -295,17 +293,6 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="336" y="243" width="672" height="678" key="search.everywhere.popup/67.27.1213.997@67.27.1213.997" timestamp="1575539072369" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bridgelabz/addressbook/AddressBookImpl.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AddressBook$AddressBookTest_GivenRecord_IfDelete_ShouldReturnTrue.ic" NAME="AddressBookTest.GivenRecord_IfDelete_ShouldReturnTrue Coverage Results" MODIFIED="1575607875517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

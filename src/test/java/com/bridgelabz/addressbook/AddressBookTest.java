@@ -61,7 +61,7 @@ public class AddressBookTest {
     public void GivenRecord_IfDelete_ShouldReturnTrue() {
         String fullPath=DESTINATION_FOLDER+"book1.json";
 //        addressBookImpl.deleteData("avengers",fullPath);
-        Assert.assertEquals("removed",addressBookImpl.deleteData("avengers",fullPath));
+        Assert.assertEquals("removed",addressBookImpl.deleteData("1234567890",fullPath));
     }
 
     //t8
@@ -78,14 +78,15 @@ public class AddressBookTest {
         Assert.assertEquals("notdeleted",addressBookImpl.deleteFile(fullPath));
     }
 
-    //t10
 
+    //t10
     @Test
     public void toTestGivenRecordShouldEdit_ShouldReturnTrue() {
         String fullPath=DESTINATION_FOLDER+"book1.json";
         Assert.assertEquals("Edited",addressBookImpl.editDetails( "kundare", "1234567890",
                 "pune", "karnataka", "147852",fullPath));
     }
+
 }
 
 

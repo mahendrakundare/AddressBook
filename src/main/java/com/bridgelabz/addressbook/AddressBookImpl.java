@@ -11,7 +11,7 @@ public class AddressBookImpl implements AddressBook {
     private static final String DESTINATION_FOLDER = "/home/admin1/IdeaProjects/AddressBook/JSONFiles/book1.json";
 
     Person person = new Person();
-//    List<Person> personList = new ArrayList<>();
+    //    List<Person> personList = new ArrayList<>();
     ObjectMapper mapper = new ObjectMapper();
     AddressBookController controller = new AddressBookController();
 
@@ -56,12 +56,12 @@ public class AddressBookImpl implements AddressBook {
     }
 
     @Override
-    public String deleteData(String firstName, String fullPath) {
+    public String deleteData(String contactNo, String fullPath) {
         List<Person> list = controller.ReadFromJson(fullPath);
         List<Person> locallist = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
-            if (!firstName.equalsIgnoreCase(list.get(i).getFirstName())) {
+            if (!contactNo.equalsIgnoreCase(list.get(i).getContactNo())) {
                 locallist.add(list.get(i));
                 controller.saveToJsonFile(locallist, fullPath);
             } else {
@@ -97,7 +97,6 @@ public class AddressBookImpl implements AddressBook {
         }
         return "notEdited";
     }
-
 
 
 }
