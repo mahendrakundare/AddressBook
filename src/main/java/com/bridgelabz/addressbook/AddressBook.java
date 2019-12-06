@@ -10,4 +10,6 @@ public interface AddressBook {
      String readData(String firstName, String fullPath);
 
      String deleteData(String firstName, String fullPath);
+
+     String deleteFile(String fullPath);
 }

@@ -62,6 +62,14 @@ public class AddressBookTest {
         String fullPath=DESTINATION_FOLDER+"book1.json";
         Assert.assertEquals("removed",addressBookImpl.deleteData("avengers",fullPath));
     }
+
+    //t8
+    @Test
+    public void GivenFile_IfDelete_ShouldReturnTrue() {
+        String fullPath=DESTINATION_FOLDER+"book2.json";
+        Assert.assertEquals("Deleted",addressBookImpl.deleteFile(fullPath));
+    }
+
 }
 
 

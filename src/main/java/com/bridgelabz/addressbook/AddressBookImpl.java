@@ -72,4 +72,13 @@ public class AddressBookImpl implements AddressBook {
         return "not removed";
     }
 
+    @Override
+    public String deleteFile(String fullPath) {
+        File file = new File(fullPath);
+        if (file.delete())
+            return "Deleted";
+        else
+            return "notDeleted";
+    }
+
 }
