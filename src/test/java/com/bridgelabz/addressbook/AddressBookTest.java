@@ -73,7 +73,14 @@ public class AddressBookTest {
         String fullPath=DESTINATION_FOLDER+"book1.json";
         Assert.assertTrue(addressBookImpl.addPerson("avengers", "kundare", "8149288245", "aurangabad",
                 "karnataka", "431001",fullPath));
+    }
 
+    //15
+    @Test
+    public void GivenData_IFStoreInInvalidFile_ShouldThrowError() throws AddressBookException {
+        String fullPath=DESTINATION_FOLDER+"abc.json";
+        Assert.assertFalse(addressBookImpl.addPerson("avengers", "kundare", "8149288245", "aurangabad",
+                "karnataka", "431001",fullPath));
     }
 
     //t6
