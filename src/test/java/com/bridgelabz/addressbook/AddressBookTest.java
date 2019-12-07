@@ -51,6 +51,14 @@ public class AddressBookTest {
         }
     }
 
+    //t14
+    @Test
+    public void GivenFileName_IfNull_ShouldThrowError() throws AddressBookException {
+        AddressBookImpl addressBookImpl = new AddressBookImpl();
+            Assert.assertEquals("False",addressBookImpl.createNewFile(DESTINATION_FOLDER,null));
+
+    }
+
     //t4
     @Test
     public void toCheckValuesAssignedToPojoOrNot()  {
