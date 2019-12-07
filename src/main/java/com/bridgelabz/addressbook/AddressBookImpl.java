@@ -14,13 +14,23 @@ public class AddressBookImpl implements AddressBook {
     AddressBookController controller = new AddressBookController();
 
     @Override
-    public boolean addPerson(String firstName, String lastName, String contactNo, String city, String state, String zipcode, String fullPath) {
-        Person person = new Person(firstName, lastName, contactNo, city, state, zipcode);
-        List<Person> list = controller.ReadFromJson(fullPath);
-        list.add(person);
-        System.out.println(person.toString());
-        controller.saveToJsonFile(list, fullPath);
-        return true;
+    public boolean addPerson(String firstName, String lastName, String contactNo, String city, String state, String zipcode, String fullPath) throws AddressBookException {
+        File file = new File(fullPath);
+        try {
+            if(file.exists()) {
+                Person person = new Person(firstName, lastName, contactNo, city, state, zipcode);
+                List<Person> list = controller.ReadFromJson(fullPath);
+                list.add(person);
+                System.out.println(person.toString());
+                controller.saveToJsonFile(list, fullPath);
+                return true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new AddressBookException("FileNotFound", AddressBookException.ExceptionType.FILE_NOT_FOUND);
+
+        }
+        return false;
     }
 
     public String createNewFile(String destinationFolder, String fileName) throws AddressBookException {
